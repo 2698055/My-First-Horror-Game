@@ -3,7 +3,7 @@ import sys
 import customtkinter as ctk
 from PIL import Image
 import ctypes
-import winsound  # Встроенная библиотека Windows (не блокируется политикой безопасности)
+import 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 COUNT_FILE = os.path.join(BASE_DIR, "launches.txt")
@@ -86,7 +86,7 @@ def start_game():
 
         p_coords = canvas.coords(player)
 
-        # Проверка границы Canvas
+        
         if (p_coords[0] + dx >= 0 and
                 p_coords[2] + dx <= CANVAS_WIDTH and
                 p_coords[1] + dy >= 0 and
@@ -125,7 +125,7 @@ def show_fullscreen_image():
         f.write("1")
 
 
-# --- GUI ---
+
 ctk.set_appearance_mode("System")
 ctk.set_default_color_theme("blue")
 
